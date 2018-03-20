@@ -8,13 +8,13 @@ $(function () {
         , $element: $('#board .column-container')
     };
     // CREATING COLUMNS
-    var todoColumn = new Column('To do');
-    var doingColumn = new Column('Doing');
-    var doneColumn = new Column('Done');
+    var todoColumn = new Column('Planuję');
+    var doingColumn = new Column('Robię');
+    var doneColumn = new Column('Zrobione');
     // ADDING COLUMNS TO THE BOARD
     board.addColumn(todoColumn);
-    //    board.addColumn(doingColumn);
-    //    board.addColumn(doneColumn);
+    board.addColumn(doingColumn);
+    board.addColumn(doneColumn);
     // CREATING CARDS
     var card1 = new Card('New task');
     var card2 = new Card('Create kanban boards');
