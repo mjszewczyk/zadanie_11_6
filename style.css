@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-.card-placeholder {
-    background: red;
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    width: 100%;
+    max-width: 100%;
     font-family: 'Roboto', sans-serif;
-    background: url('https://images.pexels.com/photos/442574/pexels-photo-442574.jpeg') no-repeat;
-    background-size: cover;
-    background-position: 30% 30%;
+    background: url('https://images.pexels.com/photos/442574/pexels-photo-442574.jpeg') 0/cover no-repeat fixed;
     margin: 0;
     padding: 0;
 }
@@ -27,7 +21,7 @@ h1 {
     font-size: 30px;
 }
 
-button {
+.create-column {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -50,7 +44,7 @@ button {
 }
 
 .column-container .column {
-    display: inline-block;
+    display: block;
     background-color: #d3d6db;
     border-right: 1px solid #6a7080;
     border-bottom: 2px solid #6a7080;
@@ -58,7 +52,29 @@ button {
     margin: 55px;
     padding: 15px;
     min-height: 300px;
-    min-width: 250px;
+    width: 300px;
+}
+
+.add-card {
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    border-right: 1px solid #6a7080;
+    border-bottom: 2px solid #6a7080;
+    opacity: 0.8;
+    display: block;
+    margin-left: 170px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+.btn-delete {
+    border: 2px solid #6a7080;
+    width: 20px;
+    background-color: #fff;
+    display: block;
+    margin-left: 280px;
+    margin-top: -30px;
 }
 
 .column-container .column h2 {
@@ -74,12 +90,22 @@ button {
     border-right: 1px solid #6a7080;
     border-bottom: 2px solid #6a7080;
     opacity: 1;
-    margin: 15px;
-    min-width: 15%;
-    max-width: 80%;
+    margin: 20px;
+    max-width: 280px;
+    word-wrap: break-word;
+    max-width: 100%;
+    padding: 10px;
 }
 
-button .btn-delete {
+.card-btn-delete {
     border: 2px solid #6a7080;
     width: 20px;
+    background-color: #fff;
+    margin-left: 200px;
+    margin-bottom: 3px;
+}
+
+.card-placeholder {
+    border: 2px dashed #2c3e50;
+    list-style-type: none;
 }
