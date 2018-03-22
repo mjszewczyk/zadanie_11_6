@@ -1,11 +1,11 @@
 $(function () {
     var board = {
-        name: 'Kanban Board'
-        , addColumn: function (column) {
+        name: 'Kanban Board', 
+        addColumn: function (column) {
             this.$element.append(column.$element);
             initSortable();
-        }
-        , $element: $('#board .column-container')
+        },
+        $element: $('#board .column-container')
     };
     // CREATING COLUMNS
     var todoColumn = new Column('Planuję');
@@ -62,8 +62,8 @@ function Column(name) {
 Column.prototype = {
     addCard: function (card) {
         this.$element.children('ul').append(card.$element);
-    }
-    , removeColumn: function () {
+    },
+    removeColumn: function () {
         this.$element.remove();
     }
 };
