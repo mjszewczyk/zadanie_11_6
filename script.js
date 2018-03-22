@@ -93,7 +93,7 @@ Card.prototype = {
 
 function initSortable() {
     $('.column-card-list').sortable({
-        connectWith: '.column-card-list'
-        , placeholder: 'card-placeholder'
+        connectWith: '.column-card-list',
+        placeholder: 'card-placeholder'
     }).disableSelection();
 }
